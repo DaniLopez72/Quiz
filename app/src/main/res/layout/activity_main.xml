@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/totals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_centerHorizontal="true"
+        android:text="Totales - 1/7"
+        android:textColor="#EAE9E9"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answersLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 1"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 2"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 3"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer3"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 4"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer4"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escribir aqui la pregunta"
+        android:layout_above="@id/answersLayout"
+        android:textSize="20sp"
+        android:id="@+id/question"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPROBAR"
+        android:layout_below="@+id/answersLayout"
+        android:layout_marginTop="25dp"
+        android:onClick="CheckAnswer"
+        android:id="@+id/check"/>
+</RelativeLayout>
